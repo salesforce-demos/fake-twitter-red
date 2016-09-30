@@ -8,16 +8,44 @@
 <div class="timeline-Header" data-scribe="section:header">
   <script>
     function clickme(){
-      $('#asdf').show();
+      $('.demo-asdf').toggle();
+      $('#more_tweets').html('');
+      $('#more_tweets').css('height','0px');
+
+
+      setTimeout(function(){
+        $('#more_tweets').animate({
+            height: '50'
+        }, 500 , function(){
+          $('#more_tweets').html('10 new results');
+        });
+      }, 8000);
     }
+
+    setTimeout(function(){
+      $('#more_tweets').animate({
+            height: '50'
+        }, 500 , function(){
+          $('#more_tweets').html('10 new results');
+        });
+    }, 5000);
   </script>
   <style>
-    #asdf{
+    .demo-asdf{
       display: none;
     }
+
+    #more_tweets{
+      height: 0px;
+    }
+
+    #more_tweets:hover{
+      background-color: #E2E8ED !important;  
+    }
+    
   </style>
   
-<h1 class="timeline-Header-title u-inlineBlock" data-scribe="element:title"  onclick="clickme();">Tweets <span class="timeline-Header-byline" data-scribe="element:byline"> 
+<h1 class="timeline-Header-title u-inlineBlock" data-scribe="element:title"  >Tweets <span class="timeline-Header-byline" data-scribe="element:byline"> 
 </span></h1>
 
   
@@ -35,9 +63,15 @@
   <div class="timeline-Viewport">
 
     <ol class="timeline-TweetList">
-      
-  
-<li id="asdf" class="timeline-TweetList-tweet customisable-border">
+    
+
+  <div id="more_tweets" style="width: 100%; color: #9E353B; background-color: rgb(245, 248, 250); cursor: pointer; font-size: 13px; font-family: 'helvetica neue'; text-align: center; line-height: 50px; border-color: rgb(225, 232, 237);" onclick="clickme();">
+    
+  </div>
+
+
+
+<li class="demo-asdf timeline-TweetList-tweet customisable-border">
   
   
 <div class="timeline-Tweet  u-cf js-tweetIdInfo" data-tweet-id="781587008368046080" data-rendered-tweet-id="781587008368046080" data-scribe="component:tweet">
@@ -50,7 +84,7 @@
     <span class="TweetAuthor-avatar Identity-avatar">
       <img class="Avatar" data-scribe="element:avatar" data-src-2x="https://pbs.twimg.com/profile_images/781648018097381376/LiFu0EOj.jpg" alt="" data-src-1x="https://pbs.twimg.com/profile_images/781648018097381376/LiFu0EOj.jpg" src="https://pbs.twimg.com/profile_images/781648018097381376/LiFu0EOj.jpg">
     </span>
-    <span class="TweetAuthor-name Identity-name customisable-highlight" title="(RED)" data-scribe="element:name">Leah Pullman</span>
+    <span class="TweetAuthor-name Identity-name customisable-highlight" title="Leah Pullman" data-scribe="element:name">Leah Pullman</span>
     
     <span class="TweetAuthor-screenName Identity-screenName" title="@RED" data-scribe="element:screen_name" dir="ltr">@leahlovesnature</span>
   </a>
@@ -58,7 +92,7 @@
 </div>
   
 
-  <p class="timeline-Tweet-text" lang="en" dir="ltr"><a href="https://twitter.com/JMunozActor" class="PrettyLink profile customisable h-card" dir="ltr" data-mentioned-user-id="269543530" data-scribe="element:mention"><span class="PrettyLink-prefix">@</span><span class="PrettyLink-value">RED</span></a> just made a contribution to the cause. We can do this together! <a href="https://twitter.com/JMunozActor" class="PrettyLink profile customisable h-card" dir="ltr" data-mentioned-user-id="269543530" data-scribe="element:mention"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">df16</span></a> </p>
+  <p class="timeline-Tweet-text" lang="en" dir="ltr">Just made a contribution to the cause. We can do this together! <a href="https://twitter.com/JMunozActor" class="PrettyLink profile customisable h-card" dir="ltr" data-mentioned-user-id="269543530" data-scribe="element:mention"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">df16</span></a> </p>
 
     <div class="timeline-Tweet-media">
   
@@ -102,6 +136,8 @@ NaturalImage--roundedTop
   </time></a>
   </div>
 
+  
+
   <ul class="timeline-Tweet-actions" data-scribe="component:actions" role="menu" aria-label="Tweet actions">
     <li class="timeline-Tweet-action">
 <a class="TweetAction TweetAction--heart web-intent" href="https://twitter.com/intent/like?tweet_id=781587008368046080" data-scribe="element:heart"><div class="Icon Icon--heart TweetAction-icon" aria-label="Like" title="Like" role="img"></div></a></li>
@@ -125,7 +161,200 @@ NaturalImage--roundedTop
 </li>
 
 
+
+
+
+
+
+<li class="demo-asdf timeline-TweetList-tweet customisable-border">
   
+  
+<div class="timeline-Tweet  u-cf js-tweetIdInfo" data-tweet-id="781587008368046080" data-rendered-tweet-id="781587008368046080" data-scribe="component:tweet">
+  <div class="timeline-Tweet-brand u-floatRight"><div class="Icon Icon--twitter " aria-label="" title="" role="presentation"></div></div>
+
+
+  <div class="timeline-Tweet-author">
+<div class="TweetAuthor" data-scribe="component:author">
+  <a class="TweetAuthor-link Identity u-linkBlend" data-scribe="element:user_link" href="https://twitter.com/RED" aria-label="(RED) (screen name: RED)">
+    <span class="TweetAuthor-avatar Identity-avatar">
+      <img class="Avatar" data-scribe="element:avatar" data-src-2x="http://www.lovethispic.com/uploaded_images/14818-Yellow-Beach-Chairs.jpg" alt="" data-src-1x="http://www.lovethispic.com/uploaded_images/14818-Yellow-Beach-Chairs.jpg" src="http://www.lovethispic.com/uploaded_images/14818-Yellow-Beach-Chairs.jpg">
+    </span>
+    <span class="TweetAuthor-name Identity-name customisable-highlight" title="Earl Parker" data-scribe="element:name">Earl Parker</span>
+    
+    <span class="TweetAuthor-screenName Identity-screenName" title="@RED" data-scribe="element:screen_name" dir="ltr">@eparker476</span>
+  </a>
+</div>
+</div>
+  
+
+  <p class="timeline-Tweet-text" lang="en" dir="ltr"> Join Salesforce and <a href="https://twitter.com/JMunozActor" class="PrettyLink profile customisable h-card" dir="ltr" data-mentioned-user-id="269543530" data-scribe="element:mention"><span class="PrettyLink-prefix">@</span><span class="PrettyLink-value">RED</span></a> in the fight towards an AIDS-free generation.   <a href="https://twitter.com/JMunozActor" class="PrettyLink profile customisable h-card" dir="ltr" data-mentioned-user-id="269543530" data-scribe="element:mention"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">DFGives http://dreamforce.com/red</span></a> </p>
+
+    <div class="timeline-Tweet-media">
+  
+  
+  
+<article class="MediaCard
+           
+           
+           customisable-border" data-scribe="component:card" dir="ltr">
+  <div class="MediaCard-media">
+
+    <div class="MediaCard-widthConstraint js-cspForcedStyle" style="max-width: 1200px" data-style="max-width: 1200px">
+      <div class="MediaCard-mediaContainer js-cspForcedStyle" style="padding-bottom: 56.2500%" data-style="padding-bottom: 56.2500%">
+          <a class="MediaCard-mediaAsset
+                    NaturalImage
+NaturalImage--roundedTop
+                    NaturalImage--roundedBottom" href="https://twitter.com/RED/status/781587008368046080/photo/1" data-scribe="element:photo"><img class="NaturalImage-image" data-srcset="https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCtjBOa6WYAAVpaq.jpg%3Alarge 2048w,https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCtjBOa6WYAAVpaq.jpg 1200w,https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCtjBOa6WYAAVpaq.jpg%3Asmall 680w" width="1200" height="675" title="View image on Twitter" alt="View image on Twitter" src="https://pbs.twimg.com/media/CsV_Z4CUIAANlEr.png"></a>
+      </div>
+    </div>
+  </div>
+    
+</article>
+
+  
+  
+  
+</div>
+
+  <div class="timeline-Tweet-metadata">
+    <a href="https://twitter.com/RED/status/781587008368046080" class="timeline-Tweet-timestamp" data-scribe="element:mini_timestamp">
+
+
+
+
+
+
+
+
+<time class="dt-updated" datetime="2016-09-29T20:10:38+0000" pubdate="" title="Time posted: 29 Sep 2016, 20:10:38 (UTC)" aria-label="Posted 4 hours ago">
+  4<abbr title="hours">h</abbr>
+  </time></a>
+  </div>
+
+  
+
+  <ul class="timeline-Tweet-actions" data-scribe="component:actions" role="menu" aria-label="Tweet actions">
+    <li class="timeline-Tweet-action">
+<a class="TweetAction TweetAction--heart web-intent" href="https://twitter.com/intent/like?tweet_id=781587008368046080" data-scribe="element:heart"><div class="Icon Icon--heart TweetAction-icon" aria-label="Like" title="Like" role="img"></div></a></li>
+    <li class="timeline-Tweet-action timeline-ShareMenu">
+      <a class="TweetAction TweetAction--share js-showShareMenu" href="#" aria-haspopup="true" data-scribe="component:share"><div class="Icon Icon--share " aria-label="Share Tweet" title="Share Tweet" role="img"></div></a>
+      <div class="timeline-ShareMenu-container">
+        <div class="timeline-ShareMenu-caret"></div>
+        <h3 class="timeline-ShareMenu-title">Share on</h3>
+        <ul role="menu">
+            <li><a class="timeline-ShareMenu-option" href="https://twitter.com/intent/retweet?tweet_id=781587008368046080" role="menuitem" data-scribe="element:twitter">Twitter</a></li>
+            <li><a class="timeline-ShareMenu-option" href="https://facebook.com/dialog/share?app_id=2231777543&amp;display=popup&amp;href=https%3A%2F%2Ftwitter.com%2FRED%2Fstatus%2F781587008368046080" role="menuitem" data-scribe="element:facebook">Facebook</a></li>
+            <li><a class="timeline-ShareMenu-option" href="https://linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftwitter.com%2FRED%2Fstatus%2F781587008368046080" role="menuitem" data-scribe="element:linkedin">LinkedIn</a></li>
+            <li><a class="timeline-ShareMenu-option" href="https://tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Ftwitter.com%2FRED%2Fstatus%2F781587008368046080" role="menuitem" data-scribe="element:tumblr">Tumblr</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+</li>
+
+
+
+
+
+
+
+
+<li class="demo-asdf timeline-TweetList-tweet customisable-border">
+  
+  
+<div class="timeline-Tweet  u-cf js-tweetIdInfo" data-tweet-id="781587008368046080" data-rendered-tweet-id="781587008368046080" data-scribe="component:tweet">
+  <div class="timeline-Tweet-brand u-floatRight"><div class="Icon Icon--twitter " aria-label="" title="" role="presentation"></div></div>
+
+
+  <div class="timeline-Tweet-author">
+<div class="TweetAuthor" data-scribe="component:author">
+  <a class="TweetAuthor-link Identity u-linkBlend" data-scribe="element:user_link" href="https://twitter.com/RED" aria-label="(RED) (screen name: RED)">
+    <span class="TweetAuthor-avatar Identity-avatar">
+      <img class="Avatar" data-scribe="element:avatar" data-src-2x="https://www.hoorag.com/wp-content/uploads/2015/03/Dog-Bandana.png" alt="" data-src-1x="https://www.hoorag.com/wp-content/uploads/2015/03/Dog-Bandana.png" src="https://www.hoorag.com/wp-content/uploads/2015/03/Dog-Bandana.png">
+    </span>
+    <span class="TweetAuthor-name Identity-name customisable-highlight" title="Earl Parker" data-scribe="element:name">Jeannette Ramos</span>
+    
+    <span class="TweetAuthor-screenName Identity-screenName" title="@RED" data-scribe="element:screen_name" dir="ltr">@jramoshar</span>
+  </a>
+</div>
+</div>
+  
+
+  <p class="timeline-Tweet-text" lang="en" dir="ltr"> WE can do this people. Here we are supporting with our Gap clothes! <a href="https://twitter.com/JMunozActor" class="PrettyLink profile customisable h-card" dir="ltr" data-mentioned-user-id="269543530" data-scribe="element:mention"><span class="PrettyLink-prefix">#</span><span class="PrettyLink-value">endAids</span></a> </p>
+
+    <div class="timeline-Tweet-media">
+  
+  
+  
+<article class="MediaCard
+           
+           
+           customisable-border" data-scribe="component:card" dir="ltr">
+  <div class="MediaCard-media">
+
+    <div class="MediaCard-widthConstraint js-cspForcedStyle" style="max-width: 1200px" data-style="max-width: 1200px">
+      <div class="MediaCard-mediaContainer js-cspForcedStyle" style="padding-bottom: 56.2500%" data-style="padding-bottom: 56.2500%">
+          <a class="MediaCard-mediaAsset
+                    NaturalImage
+NaturalImage--roundedTop
+                    NaturalImage--roundedBottom" href="https://twitter.com/RED/status/781587008368046080/photo/1" data-scribe="element:photo"><img class="NaturalImage-image" data-srcset="https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCtjBOa6WYAAVpaq.jpg%3Alarge 2048w,https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCtjBOa6WYAAVpaq.jpg 1200w,https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FCtjBOa6WYAAVpaq.jpg%3Asmall 680w" width="1200" height="675" title="View image on Twitter" alt="View image on Twitter" src="https://pbs.twimg.com/media/CtiqP-cWYAA7RRf.jpg"></a>
+      </div>
+    </div>
+  </div>
+    
+</article>
+
+  
+  
+  
+</div>
+
+  <div class="timeline-Tweet-metadata">
+    <a href="https://twitter.com/RED/status/781587008368046080" class="timeline-Tweet-timestamp" data-scribe="element:mini_timestamp">
+
+
+
+
+
+
+
+
+<time class="dt-updated" datetime="2016-09-29T20:10:38+0000" pubdate="" title="Time posted: 29 Sep 2016, 20:10:38 (UTC)" aria-label="Posted 4 hours ago">
+  4<abbr title="hours">h</abbr>
+  </time></a>
+  </div>
+
+  
+
+  <ul class="timeline-Tweet-actions" data-scribe="component:actions" role="menu" aria-label="Tweet actions">
+    <li class="timeline-Tweet-action">
+<a class="TweetAction TweetAction--heart web-intent" href="https://twitter.com/intent/like?tweet_id=781587008368046080" data-scribe="element:heart"><div class="Icon Icon--heart TweetAction-icon" aria-label="Like" title="Like" role="img"></div></a></li>
+    <li class="timeline-Tweet-action timeline-ShareMenu">
+      <a class="TweetAction TweetAction--share js-showShareMenu" href="#" aria-haspopup="true" data-scribe="component:share"><div class="Icon Icon--share " aria-label="Share Tweet" title="Share Tweet" role="img"></div></a>
+      <div class="timeline-ShareMenu-container">
+        <div class="timeline-ShareMenu-caret"></div>
+        <h3 class="timeline-ShareMenu-title">Share on</h3>
+        <ul role="menu">
+            <li><a class="timeline-ShareMenu-option" href="https://twitter.com/intent/retweet?tweet_id=781587008368046080" role="menuitem" data-scribe="element:twitter">Twitter</a></li>
+            <li><a class="timeline-ShareMenu-option" href="https://facebook.com/dialog/share?app_id=2231777543&amp;display=popup&amp;href=https%3A%2F%2Ftwitter.com%2FRED%2Fstatus%2F781587008368046080" role="menuitem" data-scribe="element:facebook">Facebook</a></li>
+            <li><a class="timeline-ShareMenu-option" href="https://linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Ftwitter.com%2FRED%2Fstatus%2F781587008368046080" role="menuitem" data-scribe="element:linkedin">LinkedIn</a></li>
+            <li><a class="timeline-ShareMenu-option" href="https://tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Ftwitter.com%2FRED%2Fstatus%2F781587008368046080" role="menuitem" data-scribe="element:tumblr">Tumblr</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+</li>
+
+
+
+
+
 
 
 
@@ -141,11 +370,11 @@ NaturalImage--roundedTop
 <div class="TweetAuthor" data-scribe="component:author">
   <a class="TweetAuthor-link Identity u-linkBlend" data-scribe="element:user_link" href="https://twitter.com/RED" aria-label="(RED) (screen name: RED)">
     <span class="TweetAuthor-avatar Identity-avatar">
-      <img class="Avatar" data-scribe="element:avatar" data-src-2x="https://pbs.twimg.com/profile_images/749999977145987073/TIBx9FL__bigger.jpg" alt="" data-src-1x="https://pbs.twimg.com/profile_images/749999977145987073/TIBx9FL__normal.jpg" src="https://pbs.twimg.com/profile_images/749999977145987073/TIBx9FL__normal.jpg">
+      <img class="Avatar" data-scribe="element:avatar" data-src-2x="hhttp://images4.fanpop.com/image/photos/19400000/Disney-Fish-Friends-disney-19484841-500-500.jpg" alt="" data-src-1x="http://images4.fanpop.com/image/photos/19400000/Disney-Fish-Friends-disney-19484841-500-500.jpg" src="http://images4.fanpop.com/image/photos/19400000/Disney-Fish-Friends-disney-19484841-500-500.jpg">
     </span>
-    <span class="TweetAuthor-name Identity-name customisable-highlight" title="(RED)" data-scribe="element:name">(RED)</span>
+    <span class="TweetAuthor-name Identity-name customisable-highlight" title="(RED)" data-scribe="element:name">Jennifer Shin</span>
     <span class="TweetAuthor-verifiedBadge" data-scribe="element:verified_badge"><div class="Icon Icon--verified " aria-label="Verified Account" title="Verified Account" role="img"></div><b class="u-hiddenVisually">✔</b></span>
-    <span class="TweetAuthor-screenName Identity-screenName" title="@RED" data-scribe="element:screen_name" dir="ltr">@RED</span>
+    <span class="TweetAuthor-screenName Identity-screenName" title="@RED" data-scribe="element:screen_name" dir="ltr">@gogogadget143</span>
   </a>
 </div>
 </div>
